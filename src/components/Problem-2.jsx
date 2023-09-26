@@ -38,7 +38,7 @@ const Problem2 = (props) => {
     return (
         <>
             <Modal open={open} onClose={onCloseModal} center >
-                <h2>All contacts</h2>
+                <h2>All Contacts</h2>
                 <div>
                     {
                         secondData?.results?.map(item => <p>{item?.phone}</p>)
@@ -47,7 +47,7 @@ const Problem2 = (props) => {
                 </div>
             </Modal>
             <Modal open={open1} onClose={onCloseModal1} center>
-                <h2>All us contact</h2>
+                <h2>All USA Contact</h2>
                 <div>
                     {
                         datas?.results?.map(item => <p>{item?.phone}</p>)
@@ -61,7 +61,7 @@ const Problem2 = (props) => {
 
                     <div className="d-flex justify-content-center gap-3">
                         <button className="btn btn-lg btn-outline-primary" type="button" onClick={onOpenModal} >All Contacts</button>
-                        <button className="btn btn-lg btn-outline-warning" type="button" onClick={onOpenModal1} >US Contacts</button>
+                        <button className="btn btn-lg btn-outline-primary" type="button" onClick={onOpenModal1} >US Contacts</button>
                     </div>
 
                 </div>
